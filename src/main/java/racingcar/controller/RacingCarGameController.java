@@ -7,6 +7,7 @@ import racingcar.model.CarNames;
 import racingcar.model.Player;
 import racingcar.model.PlayerGroup;
 import racingcar.model.Round;
+import racingcar.model.Winners;
 import racingcar.view.InputView;
 import racingcar.view.OutputView;
 
@@ -38,6 +39,8 @@ public class RacingCarGameController {
             group.runARace();
             outputView.notice(group.toStringCarDistanceByPlayer());
         }
+        Winners winnerGroup = new Winners(group);
+        outputView.notice(winnerGroup.toStringFinalWinnerNames());
     }
 
     private CarNames getValidCarNames() {
