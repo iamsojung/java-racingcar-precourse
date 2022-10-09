@@ -12,6 +12,10 @@ public class Player {
         this.car = car;
     }
 
+    public void drive() {
+        car.run(createMovementScore());
+    }
+
     public Car getCar() {return car;}
 
     public int createMovementScore() {
