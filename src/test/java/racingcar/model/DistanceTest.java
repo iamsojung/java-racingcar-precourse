@@ -23,11 +23,11 @@ public class DistanceTest {
     void distance_출력_테스트() {
         Distance distance = new Distance();
 
-        for(int i=0; i< 3; i++) {
+        for(int i=0; i< 6; i++) {
             distance.increase();
         }
 
-        assertEquals("---", distance.toStringDistanceShape());
+        assertEquals("------", distance.toStringDistanceShape());
     }
 
     @DisplayName("Distance 값 비교 테스트")
