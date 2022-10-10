@@ -14,22 +14,20 @@ public class CarName {
     }
 
     public void validateCarName(String str) throws IllegalArgumentException {
-        boolean isValid = checkCarNameMaxLength(str) && checkCarNameMinLength(str);
+        checkCarNameMaxLength(str);
+        checkCarNameMinLength(str);
     }
 
-    private boolean checkCarNameMaxLength(String str) throws IllegalArgumentException {
+    private void checkCarNameMaxLength(String str) throws IllegalArgumentException {
         if (str.length() > MAX_LENGTH_NAME) {
             throw new IllegalArgumentException(IllegalArgumentException.MSG_MAX_LENGTH_CAR_NAME);
         }
-
-        return true;
     }
 
-    private boolean checkCarNameMinLength(String str) throws IllegalArgumentException {
+    private void checkCarNameMinLength(String str) throws IllegalArgumentException {
         if (str.length() < MIN_LENGTH_NAME) {
             throw new IllegalArgumentException(IllegalArgumentException.MSG_MIN_LENGTH_CAR_NAME);
         }
-        return true;
     }
 
     public String getCarNameValue() {
