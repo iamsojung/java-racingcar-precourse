@@ -16,7 +16,9 @@ public class Player {
         car.run(createMovementScore());
     }
 
-    public Car getCar() {return car;}
+    public Car getCar() {
+        return car;
+    }
 
     public int createMovementScore() {
         return Randoms.pickNumberInRange(MIN_NUMBER, MAX_NUMBER);

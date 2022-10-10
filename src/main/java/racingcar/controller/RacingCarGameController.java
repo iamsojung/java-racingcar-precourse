@@ -56,9 +56,9 @@ public class RacingCarGameController {
         return new CarNames(userInput);
     }
 
-    private boolean checkCarNamesUserInput(String userinput) {
+    private boolean checkCarNamesUserInput(String userInput) {
         try {
-            new CarNames(userinput);
+            new CarNames(userInput);
             return true;
         } catch (IllegalArgumentException e) {
             outputView.error(e);
@@ -79,9 +79,9 @@ public class RacingCarGameController {
         return new Round(userInput);
     }
 
-    private boolean checkRoundUserInput(String userinput) {
+    private boolean checkRoundUserInput(String userInput) {
         try {
-            new Round(userinput);
+            new Round(userInput);
             return true;
         } catch (IllegalArgumentException e) {
             outputView.error(e);
