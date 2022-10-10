@@ -17,13 +17,13 @@ public class PlayerGroup {
         playerGroup.clear();
     }
 
-    public ArrayList<Player> getPlayerGroup() { return playerGroup;}
-
     public void runARace() {
         for (Player player : playerGroup) {
             player.drive();
         }
     }
+    public ArrayList<Player> getPlayerGroup() { return playerGroup;}
+
     public String toStringCarDistanceByPlayer() {
         StringBuilder scoreboard = new StringBuilder();
         String newLine = "\n";
