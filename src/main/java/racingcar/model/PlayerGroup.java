@@ -22,7 +22,10 @@ public class PlayerGroup {
             player.drive();
         }
     }
-    public ArrayList<Player> getPlayerGroup() { return playerGroup;}
+
+    public ArrayList<Player> getPlayerGroup() {
+        return playerGroup;
+    }
 
     public String toStringCarDistanceByPlayer() {
         StringBuilder scoreboard = new StringBuilder();
