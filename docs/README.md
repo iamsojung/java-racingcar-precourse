@@ -28,16 +28,13 @@
 - 자동차의 거리를 비교해주는 기능
 - 현재 거리를 출력하는 기능
 
-### RandomNumberGenerator
-- 랜덤 값을 생성하는 기능
-
 ### Round
 - 시도 횟수 입력 값이 숫자인지 판단하는 기능
 - 시도 횟수가 1이상인지 확인하는 기능
 - 시도 횟수를 감소하는 기능
 - 시도 횟수가 입력 값까지 도달했는지 확인하는 기능
 
-### Racing
+### Winners
 - 최종 우승자를 출력하는 기능
 - 최종 우승자를 판단하는 기능
 
@@ -53,7 +50,7 @@
 
 ## Controller
 
-### GameController
+### RacingCarGameController
 - Car Racing을 진행하는 기능
 - 우승자를 반환해주는 기능
 
