@@ -20,7 +20,7 @@ public class RoundTest {
     void 시도회수_숫자가_1미만인_경우_예외() {
         assertThatExceptionOfType(IllegalArgumentException.class)
             .isThrownBy(() -> new Round("0"))
-            .withMessage(IllegalArgumentException.MSG_MIN_ROUND_NUMER);
+            .withMessage(IllegalArgumentException.MSG_MIN_ROUND_NUMBER);
     }
 
 }

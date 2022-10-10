@@ -15,7 +15,7 @@ public class Round {
 
         int round = Integer.parseInt(str);
         if (!isMoreThanMinValue(round)) {
-            throw new IllegalArgumentException(IllegalArgumentException.MSG_MIN_ROUND_NUMER);
+            throw new IllegalArgumentException(IllegalArgumentException.MSG_MIN_ROUND_NUMBER);
         }
         this.round = round;
     }
