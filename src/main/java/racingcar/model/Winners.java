@@ -5,7 +5,7 @@ public class Winners {
     Distance distance;
 
     public static final String WINNER_SEPARATOR = ", ";
-    public static final String WINNER_NOTICE_STR = "최종 우승자: ";
+    public static final String WINNER_NOTICE_STR = "최종 우승자 : ";
 
     public Winners(PlayerGroup group) {
         playerGroup = new PlayerGroup();
