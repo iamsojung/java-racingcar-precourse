@@ -34,7 +34,7 @@ public class Winners {
         StringBuilder sb = new StringBuilder();
 
         for (Player player : playerGroup.getPlayerGroup()) {
-            sb.append(player.getCar().getCarName());
+            sb.append(player.getCar().getCarName().getCarNameValue());
             sb.append(WINNER_SEPARATOR);
         }
         return WINNER_NOTICE_STR + sb.substring(0, sb.length() -2);
